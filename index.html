@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayanna Wellness Concept</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sage: '#7C8973',
+                        sand: '#F2E8DF',
+                        gold: '#C5A059',
+                        darkgreen: '#3A4434'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        [x-cloak] { display: none !important; }
+        .hero-overlay { background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.5)); }
+        .card-gradient { background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 60%); }
+    </style>
+</head>
+<body class="bg-[#FAF9F6] text-stone-800">
+
+    <div class="bg-darkgreen text-[#b7ce63] py-2 border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-2 md:gap-0">
+            <div class="flex items-center gap-6 text-[11px] font-medium tracking-wider">
+                <a href="tel:+40731831161" class="flex items-center gap-2 hover:text-white transition">
+                    <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+                    +40 73X YY1 1ZZ
+                </a>
+                <a href="#" class="flex items-center gap-2 hover:text-white transition">
+                    <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                    office@myspa.ro
+                </a>
+            </div>
+            
+            <div class="flex items-center gap-4">
+                <a href="#" class="hover:text-white transition"><svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                <a href="#" class="hover:text-white transition"><svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.84 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg></a>
+                <a href="#" class="hover:text-white transition font-bold text-[11px]">G+</a>
+                <a href="#" class="hover:text-white transition"><svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="sticky top-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-sage/10 shadow-sm" x-data="{ mobileMenuOpen: false, clientsOpen: false }">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        
+        <div class="flex items-center gap-4">
+            <img src="logo.png" alt="Logo" class="w-10 h-10 rounded-full object-cover border border-sage/20">
+            <div class="text-1xl font-bold tracking-[0.3em] text-sage uppercase">Ayanna Wellness Concept</div>
+        </div>
+        
+        <div class="hidden md:flex space-x-10 text-[10px] uppercase tracking-[0.2em] font-bold text-stone-500 items-center">
+            <a href="#" class="hover:text-sage transition">Acasă</a>
+            <a href="#programe" class="hover:text-sage transition">Programe SPA</a>
+            <a href="#facilitati" class="hover:text-sage transition">Facilități</a>
+            <a href="#despre" class="hover:text-sage transition">Povestea Noastră</a>
+            <div class="relative" @mouseenter="clientsOpen = true" @mouseleave="clientsOpen = false">
+                <button class="flex items-center gap-1 hover:text-sage transition uppercase tracking-[0.2em]">
+                    Clienți
+                    <svg class="w-3 h-3 transition-transform" :class="clientsOpen ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                
+                <div x-show="clientsOpen" 
+                     x-transition:enter="transition ease-out duration-200"
+                     x-transition:enter-start="opacity-0 translate-y-1"
+                     x-transition:enter-end="opacity-100 translate-y-0"
+                     class="absolute left-0 mt-0 w-40 bg-white border border-stone-100 shadow-xl py-2 z-50">
+                    <a href="#" class="block px-4 py-3 hover:bg-stone-50 hover:text-sage transition border-b border-stone-50">Login</a>
+                    <a href="#" class="block px-4 py-3 hover:bg-stone-50 hover:text-sage transition">Sign Up</a>
+                </div>
+            </div>
+        </div>
+
+        <button @click="mobileMenuOpen = !mobileMenuOpen" class="md:hidden text-sage">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+    </div>
+
+    <div x-show="mobileMenuOpen" x-cloak class="md:hidden bg-white px-6 py-6 border-t border-stone-100 flex flex-col gap-4 text-[10px] font-bold uppercase tracking-widest text-stone-500">
+         <a href="#" @click="mobileMenuOpen = false">Acasă</a>
+         <a href="#programe" @click="mobileMenuOpen = false">Programe SPA</a>
+         <div class="flex flex-col gap-3 pl-2 border-l border-sage/20">
+             <span class="text-stone-300">Clienți:</span>
+             <a href="#" class="text-sage">Login</a>
+             <a href="#" class="text-sage">Sign Up</a>
+         </div>
+         <a href="#facilitati" @click="mobileMenuOpen = false">Facilități</a>
+         <a href="#despre" @click="mobileMenuOpen = false">Povestea Noastră</a>
+         <a href="#" class="text-sage">Programare</a>
+    </div>
+</nav>
+	
+    <section 
+    x-data="{ 
+        activeSlide: 0, 
+        slides: [
+            { 
+                img: 'https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg?auto=compress&cs=tinysrgb&w=1920', 
+                header: 'Oază de Liniște', 
+                title: 'EXPERIENȚĂ SENZORIALĂ', 
+                desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' 
+            },
+            { 
+    img: 'https://images.pexels.com/photos/3865676/pexels-photo-3865676.jpeg?auto=compress&cs=tinysrgb&w=1920', 
+    header: 'Ritualuri Pure', 
+    title: 'REGENERARE TOTALĂ', 
+    desc: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure.' 
+},
+            { 
+                img: 'https://images.pexels.com/photos/3865676/pexels-photo-3865676.jpeg?auto=compress&cs=tinysrgb&w=1920', 
+                header: 'Atmosferă Zen', 
+                title: 'ECHILIBRU INTERIOR', 
+                desc: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint.' 
+            }
+        ],
+        next() { this.activeSlide = (this.activeSlide + 1) % this.slides.length },
+        prev() { this.activeSlide = (this.activeSlide - 1 + this.slides.length) % this.slides.length },
+        init() {
+            setInterval(() => { this.next() }, 5000); // Schimbă slide-ul la fiecare 5 secunde
+        }
+    }" 
+    class="relative h-[60vh] md:h-[60vh] overflow-hidden bg-stone-900"
+>
+    <template x-for="(slide, index) in slides" :key="index">
+        <div 
+            x-show="activeSlide === index" 
+            x-cloak 
+            x-transition:enter="transition duration-1000 ease-in-out"
+            x-transition:enter-start="opacity-0 scale-105"
+            x-transition:enter-end="opacity-100 scale-100"
+            x-transition:leave="transition duration-1000 ease-in-out"
+            x-transition:leave-start="opacity-100"
+            x-transition:leave-end="opacity-0"
+            class="absolute inset-0"
+        >
+            <div class="absolute inset-0 bg-black/40 z-10"></div>
+            
+            <img :src="slide.img" class="w-full h-full object-cover">
+            
+            <div class="absolute inset-0 z-20 flex flex-col items-center justify-center text-center text-white px-6">
+                <p x-text="slide.header" class="uppercase tracking-[0.5em] mb-4 text-xs font-light text-[#C5A059]"></p>
+                <h1 x-text="slide.title" class="text-4xl md:text-7xl font-light tracking-tight mb-6"></h1>
+                <p x-text="slide.desc" class="max-w-2xl text-sm md:text-base font-light text-stone-200 leading-relaxed italic"></p>
+            </div>
+        </div>
+    </template>
+
+    <div class="absolute inset-0 z-30 flex items-center justify-between px-4 md:px-10 pointer-events-none">
+        <button @click="prev()" class="pointer-events-auto p-2 rounded-full border border-white/20 bg-black/10 hover:bg-white/20 transition-all text-white group">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-8 h-8">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+            </svg>
+        </button>
+
+        <button @click="next()" class="pointer-events-auto p-2 rounded-full border border-white/20 bg-black/10 hover:bg-white/20 transition-all text-white group">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-8 h-8">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
+        </button>
+    </div>
+
+    <div class="absolute bottom-8 left-0 right-0 z-30 flex justify-center gap-3">
+        <template x-for="(slide, index) in slides" :key="index">
+            <button 
+                @click="activeSlide = index" 
+                class="h-1 transition-all duration-500"
+                :class="activeSlide === index ? 'w-12 bg-[#C5A059]' : 'w-6 bg-white/30'"
+            ></button>
+        </template>
+    </div>
+</section>
+	
+	
+	<section style="
+  width: 100%;
+  background-color: #F8F1F1;
+  padding: 15px 0;
+  box-sizing: border-box;
+  overflow: hidden;
+">
+  <div style="
+    max-width: 1200px; /* Sau o lățime mai mare, în funcție de layout-ul site-ului tau */
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  ">
+    <div style="
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      box-sizing: border-box;
+    ">
+      <div style="
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: fit-content;
+        margin: 0 auto;
+        box-sizing: border-box;
+      ">
+        <span style="
+          color: #CC5555;
+          font-family: Playfair;
+          font-size: 30px;
+          margin-right: 15px;
+        ">
+          Beneficiezi de 5% reducere la comenzile ce depășesc <strong>1500 lei</strong>.
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section id="programe" class="py-20 bg-white" 
+        x-data="{ 
+            tab: 'ea',
+            items: [
+                { id: 1, time: '75min', title: 'Grateful Glow', price: '390', img: 'https://images.pexels.com/photos/3373739/pexels-photo-3373739.jpeg?auto=compress&cs=tinysrgb&w=600', desc: 'Simte-te liberă să te relaxezi și să strălucești.', perks: ['Terapie facială 75\'', 'Tratament ochi', 'Mască infraroșu', 'Masaj cap/umeri'] },
+                { id: 2, time: '75min', title: 'Hello, Energy', price: '450', img: 'https://images.pexels.com/photos/3865673/pexels-photo-3865673.jpeg?auto=compress&cs=tinysrgb&w=600', desc: 'Energizează-te cu ulei de ghimbir și mandarine.', perks: ['Masaj energizant 60\'', 'Masaj facial 15\'', 'Uleiuri esențiale', 'Acces piscină/saună'] },
+                { id: 3, time: '90min', title: 'Sensory Cruise', price: '535', img: 'https://images.pexels.com/photos/4046316/pexels-photo-4046316.jpeg?auto=compress&cs=tinysrgb&w=600', desc: 'O evadare exotică pe insule cu nisip cald.', perks: ['Exfoliere cocos 30\'', 'Masaj vanilie 60\'', 'Circuit Spa complet', 'Șezlonguri încălzite'] },
+                { id: 4, time: '90min', title: 'Healing Mist', price: '580', img: 'https://images.pexels.com/photos/6663571/pexels-photo-6663571.jpeg?auto=compress&cs=tinysrgb&w=600', desc: 'Vindecare prin atingere lentă și conștientă.', perks: ['Masaj intuitiv 90\'', 'Roci vulcanice spate', 'Masaj facial/scalp', 'Circuit Spa inclus'] }
+            ],
+            shuffleItems() {
+                this.items = [...this.items].sort(() => Math.random() - 0.5);
+            }
+        }" x-init="shuffleItems()">
+		
+		
+		
+        
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="flex flex-wrap justify-center gap-4 md:gap-12 border-b border-stone-100 mb-16 text-[11px] uppercase tracking-widest font-bold text-stone-400">
+                <button @click="tab = 'ea'; shuffleItems()" :class="tab === 'ea' ? 'text-sage border-b-2 border-sage pb-4' : 'pb-4 hover:text-stone-600 transition'" class="px-2">SPA PENTRU EA</button>
+                <button @click="tab = 'el'; shuffleItems()" :class="tab === 'el' ? 'text-sage border-b-2 border-sage pb-4' : 'pb-4 hover:text-stone-600 transition'" class="px-2">SPA PENTRU EL</button>
+                <button @click="tab = 'doi'; shuffleItems()" :class="tab === 'doi' ? 'text-sage border-b-2 border-sage pb-4' : 'pb-4 hover:text-stone-600 transition'" class="px-2">SPA PENTRU DOI</button>
+                <button @click="tab = 'grupuri'; shuffleItems()" :class="tab === 'grupuri' ? 'text-sage border-b-2 border-sage pb-4' : 'pb-4 hover:text-stone-600 transition'" class="px-2">EVENIMENTE GRUPURI</button>
+                <button @click="tab = 'vouchere'; shuffleItems()" :class="tab === 'vouchere' ? 'text-sage border-b-2 border-sage pb-4' : 'pb-4 hover:text-stone-600 transition'" class="px-2">VOUCHERE VALORICE</button>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <template x-for="item in items" :key="item.id">
+                    <div class="space-y-6" x-transition:enter="transition duration-500 transform" x-transition:enter-start="opacity-0 translate-y-4">
+                        <div class="relative h-[300px] rounded-[2rem] overflow-hidden shadow-lg group">
+                            <img :src="item.img" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                            <div class="absolute top-4 left-4 bg-black/70 text-white text-[10px] px-3 py-1 rounded-full font-bold" x-text="item.time"></div>
+                            <div class="absolute inset-0 card-gradient"></div>
+                            <div class="absolute bottom-6 left-6 text-white">
+                                <h3 class="text-xl italic mb-1" x-text="item.title"></h3>
+                                <p class="text-2xl font-light"><span x-text="item.price"></span>.<sup>00</sup> <span class="text-sm">RON</span></p>
+                            </div>
+                        </div>
+                        <div class="px-2">
+                            <p class="text-stone-500 text-sm italic mb-4" x-text="item.desc"></p>
+                            <ul class="text-[12px] text-stone-600 space-y-2">
+                                <template x-for="perk in item.perks">
+                                    <li class="flex items-start"><span class="text-sage mr-2">✓</span> <span x-text="perk"></span></li>
+                                </template>
+                            </ul>
+                        </div>
+                    </div>
+                </template>
+            </div>
+        </div>
+    </section>
+	
+	
+	
+	<section class="pb-24 pt-0 bg-[#FDFBF9]"> <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-0 border-t border-stone-100"> 
+                
+                <div class="flex flex-col items-center text-center p-8 group">
+                    <div class="mb-6 transform transition-transform group-hover:scale-110 duration-300">
+                        <svg class="w-10 h-10 text-gold/80" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.343l-.707-.707m12.728 12.728L5.5 5.5"></path></svg>
+                    </div>
+                    <h4 class="text-sage font-bold text-[10px] uppercase tracking-[0.3em] mb-3 leading-tight">Personal Specializat</h4>
+                    <p class="text-stone-400 text-[10px] leading-relaxed font-light">Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+
+                <div class="flex flex-col items-center text-center p-8 group border-l border-stone-100">
+                    <div class="mb-6 transform transition-transform group-hover:scale-110 duration-300">
+                        <svg class="w-10 h-10 text-gold/80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+                    </div>
+                    <h4 class="text-sage font-bold text-[10px] uppercase tracking-[0.3em] mb-3 leading-tight">Calitate Superioară</h4>
+                    <p class="text-stone-400 text-[10px] leading-relaxed font-light">Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+
+                <div class="flex flex-col items-center text-center p-8 group border-l border-stone-100">
+                    <div class="mb-6 transform transition-transform group-hover:scale-110 duration-300">
+                        <svg class="w-10 h-10 text-gold/80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+                    </div>
+                    <h4 class="text-sage font-bold text-[10px] uppercase tracking-[0.3em] mb-3 leading-tight">Spațiu Atent Gândit</h4>
+                    <p class="text-stone-400 text-[10px] leading-relaxed font-light">Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+
+                <div class="flex flex-col items-center text-center p-8 group border-l border-stone-100">
+                    <div class="mb-6 transform transition-transform group-hover:scale-110 duration-300">
+                        <svg class="w-10 h-10 text-gold/80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                    </div>
+                    <h4 class="text-sage font-bold text-[10px] uppercase tracking-[0.3em] mb-3 leading-tight">Atmosferă Zen</h4>
+                    <p class="text-stone-400 text-[10px] leading-relaxed font-light">Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+
+                <div class="flex flex-col items-center text-center p-8 group border-l border-stone-100">
+                    <div class="mb-6 transform transition-transform group-hover:scale-110 duration-300">
+                        <svg class="w-10 h-10 text-gold/80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h4 class="text-sage font-bold text-[10px] uppercase tracking-[0.3em] mb-3 leading-tight">Relaxare Totală</h4>
+                    <p class="text-stone-400 text-[10px] leading-relaxed font-light">Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+
+                <div class="flex flex-col items-center text-center p-8 group border-l border-stone-100">
+                    <div class="mb-6 transform transition-transform group-hover:scale-110 duration-300">
+                        <svg class="w-10 h-10 text-gold/80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <h4 class="text-sage font-bold text-[10px] uppercase tracking-[0.3em] mb-3 leading-tight">Siguranță & Igienă</h4>
+                    <p class="text-stone-400 text-[10px] leading-relaxed font-light">Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+	
+	
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        [x-cloak] { display: none !important; }
+        .service-card { transition: all 0.3s ease-in-out; }
+    </style>
+
+
+<section class="py-24 px-6 max-w-7xl mx-auto">
+    <div class="mb-16">
+        <div class="flex items-center gap-6 mb-6">
+            <h1 class="text-5xl tracking-tight text-gray-950 font-medium">Serviciile Noastre</h1>
+            <div class="h-px w-24 bg-gray-300 rounded-full"></div>
+        </div>
+        <p class="max-w-5xl text-gray-600 font-light leading-relaxed">
+            Misiunea Ayanna Wellness Concept Haven este de a îi ajuta pe oaspeții noștri să își consolideze echilibrul interior, să își redescopere frumusețea interioară și exterioară, oferindu-le servicii complete de îngrijire și armonizare a corpului, minții și sufletului. Oricând aveți nevoie de relaxare, de reechilibrare emoțională sau fizică, când aveți nevoie să vă simțiți și să arătați mai bine, vă așteptăm cu drag la Ayanna Wellness Concept Haven!
+        </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <div class="group relative bg-[#FBF9F6] p-12 rounded-2xl shadow-sm border border-stone-100 flex flex-col items-center justify-center text-center h-[360px] cursor-pointer overflow-hidden transition-all duration-300 hover:shadow-2xl">
+            <div class="z-10 text-center flex flex-col items-center group-hover:opacity-0 transition-opacity duration-300">
+                <img src="https://picsum.photos/id/431/300/300" class="w-24 h-24 mb-10 object-cover rounded-full shadow-md" alt="SPA">
+                <h3 class="text-3xl italic font-normal text-gray-900 leading-tight">Spa & Wellness</h3>
+            </div>
+            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-20 flex flex-col justify-center p-10 text-center">
+                <div class="absolute inset-0 bg-black/60 z-30"></div>
+                <img src="https://picsum.photos/id/431/800/800" class="absolute inset-0 w-full h-full object-cover z-20 scale-105 group-hover:scale-100 transition-transform duration-700">
+                <div class="z-40 text-white flex flex-col items-center">
+                    <h3 class="text-3xl italic font-medium mb-6">Spa & Wellness</h3>
+                    <p class="text-sm font-light leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <a href="#" class="mt-8 text-white uppercase tracking-[0.2em] text-[10px] font-bold border-b border-white pb-1">Rezervă acum</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="group relative bg-[#FBF9F6] p-12 rounded-2xl shadow-sm border border-stone-100 flex flex-col items-center justify-center text-center h-[360px] cursor-pointer overflow-hidden transition-all duration-300 hover:shadow-2xl">
+            <div class="z-10 text-center flex flex-col items-center group-hover:opacity-0 transition-opacity duration-300">
+                <img src="https://picsum.photos/id/429/300/300" class="w-24 h-24 mb-10 object-cover rounded-full shadow-md" alt="Detox">
+                <h3 class="text-3xl italic font-normal text-gray-900 leading-tight">Detox</h3>
+            </div>
+            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-20 flex flex-col justify-center p-10 text-center">
+                <div class="absolute inset-0 bg-black/60 z-30"></div>
+                <img src="https://picsum.photos/id/429/800/800" class="absolute inset-0 w-full h-full object-cover z-20 scale-105 group-hover:scale-100 transition-transform duration-700">
+                <div class="z-40 text-white flex flex-col items-center">
+                    <h3 class="text-3xl italic font-medium mb-6">Detox</h3>
+                    <p class="text-sm font-light leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <a href="#" class="mt-8 text-white uppercase tracking-[0.2em] text-[10px] font-bold border-b border-white pb-1">Rezervă acum</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="group relative bg-[#FBF9F6] p-12 rounded-2xl shadow-sm border border-stone-100 flex flex-col items-center justify-center text-center h-[360px] cursor-pointer overflow-hidden transition-all duration-300 hover:shadow-2xl">
+            <div class="z-10 text-center flex flex-col items-center group-hover:opacity-0 transition-opacity duration-300">
+                <img src="https://picsum.photos/id/493/300/300" class="w-24 h-24 mb-10 object-cover rounded-full shadow-md" alt="Nutritie">
+                <h3 class="text-3xl italic font-normal text-gray-900 leading-tight">Nutriție</h3>
+            </div>
+            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-20 flex flex-col justify-center p-10 text-center">
+                <div class="absolute inset-0 bg-black/60 z-30"></div>
+                <img src="https://picsum.photos/id/493/800/800" class="absolute inset-0 w-full h-full object-cover z-20 scale-105 group-hover:scale-100 transition-transform duration-700">
+                <div class="z-40 text-white flex flex-col items-center">
+                    <h3 class="text-3xl italic font-medium mb-6">Nutriție</h3>
+                    <p class="text-sm font-light leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <a href="#" class="mt-8 text-white uppercase tracking-[0.2em] text-[10px] font-bold border-b border-white pb-1">Rezervă acum</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="group relative bg-[#FBF9F6] p-12 rounded-2xl shadow-sm border border-stone-100 flex flex-col items-center justify-center text-center h-[360px] cursor-pointer overflow-hidden transition-all duration-300 hover:shadow-2xl">
+            <div class="z-10 text-center flex flex-col items-center group-hover:opacity-0 transition-opacity duration-300">
+                <img src="https://picsum.photos/id/1080/300/300" class="w-24 h-24 mb-10 object-cover rounded-full shadow-md" alt="Greutate">
+                <h3 class="text-3xl italic font-normal text-gray-900 leading-tight">Controlul greutății</h3>
+            </div>
+            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-20 flex flex-col justify-center p-10 text-center">
+                <div class="absolute inset-0 bg-black/60 z-30"></div>
+                <img src="https://picsum.photos/id/1080/800/800" class="absolute inset-0 w-full h-full object-cover z-20 scale-105 group-hover:scale-100 transition-transform duration-700">
+                <div class="z-40 text-white flex flex-col items-center">
+                    <h3 class="text-3xl italic font-medium mb-6">Controlul greutății</h3>
+                    <p class="text-sm font-light leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <a href="#" class="mt-8 text-white uppercase tracking-[0.2em] text-[10px] font-bold border-b border-white pb-1">Rezervă acum</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="group relative bg-[#FBF9F6] p-12 rounded-2xl shadow-sm border border-stone-100 flex flex-col items-center justify-center text-center h-[360px] cursor-pointer overflow-hidden transition-all duration-300 hover:shadow-2xl">
+            <div class="z-10 text-center flex flex-col items-center group-hover:opacity-0 transition-opacity duration-300">
+                <img src="https://picsum.photos/id/649/300/300" class="w-24 h-24 mb-10 object-cover rounded-full shadow-md" alt="Wellbeing">
+                <h3 class="text-3xl italic font-normal text-gray-900 leading-tight">Wellbeing</h3>
+            </div>
+            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-20 flex flex-col justify-center p-10 text-center">
+                <div class="absolute inset-0 bg-black/60 z-30"></div>
+                <img src="https://picsum.photos/id/649/800/800" class="absolute inset-0 w-full h-full object-cover z-20 scale-105 group-hover:scale-100 transition-transform duration-700">
+                <div class="z-40 text-white flex flex-col items-center">
+                    <h3 class="text-3xl italic font-medium mb-6">Wellbeing</h3>
+                    <p class="text-sm font-light leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <a href="#" class="mt-8 text-white uppercase tracking-[0.2em] text-[10px] font-bold border-b border-white pb-1">Rezervă acum</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="group relative bg-[#FBF9F6] p-12 rounded-2xl shadow-sm border border-stone-100 flex flex-col items-center justify-center text-center h-[360px] cursor-pointer overflow-hidden transition-all duration-300 hover:shadow-2xl">
+            <div class="z-10 text-center flex flex-col items-center group-hover:opacity-0 transition-opacity duration-300">
+                <img src="https://picsum.photos/id/349/300/300" class="w-24 h-24 mb-10 object-cover rounded-full shadow-md" alt="Facial">
+                <h3 class="text-3xl italic font-normal text-gray-900 leading-tight">Terapii Faciale</h3>
+            </div>
+            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-20 flex flex-col justify-center p-10 text-center">
+                <div class="absolute inset-0 bg-black/60 z-30"></div>
+                <img src="https://picsum.photos/id/349/800/800" class="absolute inset-0 w-full h-full object-cover z-20 scale-105 group-hover:scale-100 transition-transform duration-700">
+                <div class="z-40 text-white flex flex-col items-center">
+                    <h3 class="text-3xl italic font-medium mb-6">Terapii Faciale</h3>
+                    <p class="text-sm font-light leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <a href="#" class="mt-8 text-white uppercase tracking-[0.2em] text-[10px] font-bold border-b border-white pb-1">Rezervă acum</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+	<section class="relative w-full h-[600px] overflow-hidden bg-stone-900">
+    
+    <video 
+        autoplay 
+        loop 
+        muted 
+        playsinline 
+        class="absolute inset-0 w-full h-full object-cover z-0">
+        <source src="https://www.pexels.com/download/video/9335886/" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="absolute inset-0 bg-black/60 z-10"></div>
+
+    <div class="relative z-20 h-full flex flex-col items-center justify-center text-center px-6">
+        
+        <div class="flex gap-1 mb-6">
+            <span class="text-[#C5A059] text-xl">★★★★★</span>
+        </div>
+        <h2 class="text-white text-3xl md:text-5xl font-light italic mb-8 max-w-4xl leading-tight">
+            Viziune plină de grijă și inspirație pentru bunăstare
+        </h2>
+
+        <p class="text-white/80 text-sm md:text-base font-light max-w-3xl leading-relaxed italic">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+    </div>
+</section>
+	
+	
+	<section id="facilitati" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="flex items-center gap-6 mb-6">
+            <h1 class="text-5xl tracking-tight text-gray-950 font-medium">Facilități</h1>
+            <div class="h-px w-24 bg-gray-300 rounded-full"></div>
+        </div>
+
+            <div class="max-w-4xl mx-auto text-center mb-20">
+                <p class="text-stone-500 font-light leading-relaxed italic text-sm md:text-base">
+                    Spa-ul este un loc de regăsire personală pentru oamenii stresului secolului XXI. Ayanna Wellness Concept Haven s-a născut din pasiunea pentru starea de bine, concept pe care noi îl înțelegem ca fiind un mod de viață ce se rupe de grijile cotidiene și se concentrează pe sănătatea fizică, emoțională și mentală.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <div class="group relative h-[350px] overflow-hidden rounded-sm shadow-sm cursor-pointer">
+                    <img src="https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Piscină">
+                    <div class="absolute inset-0 bg-black/70 flex flex-col justify-center items-center px-8 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        <p class="text-white text-sm mb-6 font-light">O oază de relaxare acvatică cu temperatură controlată și sisteme de hidromasaj de ultimă generație.</p>
+                        <a href="#" class="text-gold uppercase tracking-[0.2em] text-[10px] font-bold border-b border-gold pb-1 hover:text-white hover:border-white transition">Vezi Detalii</a>
+                    </div>
+                    <div class="absolute bottom-0 w-full py-5 bg-white/95 backdrop-blur-sm text-center group-hover:opacity-0 transition-opacity duration-300">
+                        <span class="text-stone-600 uppercase tracking-[0.2em] text-[11px] font-semibold">Piscină acoperită</span>
+                    </div>
+                </div>
+
+                <div class="group relative h-[350px] overflow-hidden rounded-sm shadow-sm cursor-pointer">
+                    <img src="https://images.pexels.com/photos/6663583/pexels-photo-6663583.jpeg?auto=compress&cs=tinysrgb&w=800" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Hamam">
+                    <div class="absolute inset-0 bg-black/70 flex flex-col justify-center items-center px-8 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        <h4 class="text-white italic text-xl mb-2">Baie Turcească</h4>
+                        <p class="text-stone-300 text-sm mb-6 font-light">Baia Turcească, în denumirea originală Hamam, este o baie cu aburi cu o temperatură de maxim 40° C.</p>
+                        <a href="#" class="text-gold uppercase tracking-[0.2em] text-[10px] font-bold border-b border-gold pb-1 transition">Vezi Detalii</a>
+                    </div>
+                    <div class="absolute bottom-0 w-full py-5 bg-white/95 backdrop-blur-sm text-center group-hover:opacity-0 transition-opacity duration-300">
+                        <span class="text-stone-600 uppercase tracking-[0.2em] text-[11px] font-semibold">Baie Turcească</span>
+                    </div>
+                </div>
+
+                <div class="group relative h-[350px] overflow-hidden rounded-sm shadow-sm cursor-pointer">
+                    <img src="https://images.pexels.com/photos/5953044/pexels-photo-5953044.jpeg?auto=compress&cs=tinysrgb&w=800" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Salină">
+                    <div class="absolute inset-0 bg-black/70 flex flex-col justify-center items-center px-8 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        <p class="text-white text-sm mb-6 font-light">Microclimat salin ideal pentru purificarea sistemului respirator și relaxare mentală profundă.</p>
+                        <a href="#" class="text-gold uppercase tracking-[0.2em] text-[10px] font-bold border-b border-gold pb-1 transition">Vezi Detalii</a>
+                    </div>
+                    <div class="absolute bottom-0 w-full py-5 bg-white/95 backdrop-blur-sm text-center group-hover:opacity-0 transition-opacity duration-300">
+                        <span class="text-stone-600 uppercase tracking-[0.2em] text-[11px] font-semibold">Salină</span>
+                    </div>
+                </div>
+
+                <div class="group relative h-[350px] overflow-hidden rounded-sm shadow-sm cursor-pointer">
+                    <img src="https://images.pexels.com/photos/3865676/pexels-photo-3865676.jpeg?auto=compress&cs=tinysrgb&w=800" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Relaxare">
+                    <div class="absolute inset-0 bg-black/70 flex flex-col justify-center items-center px-8 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        <p class="text-white text-sm mb-6 font-light">Zone de liniște absolută dotate cu șezlonguri anatomice și ambianță cromatică relaxantă.</p>
+                        <a href="#" class="text-gold uppercase tracking-[0.2em] text-[10px] font-bold border-b border-gold pb-1 transition">Vezi Detalii</a>
+                    </div>
+                    <div class="absolute bottom-0 w-full py-5 bg-white/95 backdrop-blur-sm text-center group-hover:opacity-0 transition-opacity duration-300">
+                        <span class="text-stone-600 uppercase tracking-[0.2em] text-[11px] font-semibold">Arii de relaxare</span>
+                    </div>
+                </div>
+
+                <div class="group relative h-[350px] overflow-hidden rounded-sm shadow-sm cursor-pointer">
+                    <img src="https://images.pexels.com/photos/6663292/pexels-photo-6663292.jpeg?auto=compress&cs=tinysrgb&w=800" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Tepidarium">
+                    <div class="absolute inset-0 bg-black/70 flex flex-col justify-center items-center px-8 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        <p class="text-white text-sm mb-6 font-light">Căldură radiantă din pereți și bănci, ideală pentru pregătirea corpului înainte de terapii.</p>
+                        <a href="#" class="text-gold uppercase tracking-[0.2em] text-[10px] font-bold border-b border-gold pb-1 transition">Vezi Detalii</a>
+                    </div>
+                    <div class="absolute bottom-0 w-full py-5 bg-white/95 backdrop-blur-sm text-center group-hover:opacity-0 transition-opacity duration-300">
+                        <span class="text-stone-600 uppercase tracking-[0.2em] text-[11px] font-semibold">Tepidarium</span>
+                    </div>
+                </div>
+
+                <div class="group relative h-[350px] overflow-hidden rounded-sm shadow-sm cursor-pointer">
+                    <img src="https://images.pexels.com/photos/4053248/pexels-photo-4053248.jpeg?auto=compress&cs=tinysrgb&w=800" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Bar">
+                    <div class="absolute inset-0 bg-black/70 flex flex-col justify-center items-center px-8 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        <p class="text-white text-sm mb-6 font-light">Revitalizare cu smoothie-uri proaspete, infuzii de ierburi rare și gustări sănătoase.</p>
+                        <a href="#" class="text-gold uppercase tracking-[0.2em] text-[10px] font-bold border-b border-gold pb-1 transition">Vezi Detalii</a>
+                    </div>
+                    <div class="absolute bottom-0 w-full py-5 bg-white/95 backdrop-blur-sm text-center group-hover:opacity-0 transition-opacity duration-300">
+                        <span class="text-stone-600 uppercase tracking-[0.2em] text-[11px] font-semibold">Energy bar</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="despre" class="py-24 px-6 bg-sand/20">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center">
+            <div class="relative">
+                <img src="https://images.pexels.com/photos/3865676/pexels-photo-3865676.jpeg?auto=compress&cs=tinysrgb&w=800" class="w-full h-[500px] object-cover rounded-[3rem] shadow-2xl">
+            </div>
+            <div class="lg:pl-10">
+                <h2 class="text-5xl text-darkgreen mb-8 italic">Echilibru în fiecare atingere.</h2>
+                <p class="text-stone-600 leading-relaxed text-lg mb-10 font-light italic">Promisiunea noastră este o experiență senzorială completă, menită să îți redea liniștea interioară.</p>
+                <button class="px-10 py-4 bg-sage text-white rounded-full uppercase tracking-widest font-bold text-[10px] hover:bg-darkgreen transition">Descoperă Povestea</button>
+            </div>
+        </div>
+    </section>
+	
+	
+<section id="echipa" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            
+            <div class="mb-16">
+                <h2 class="text-xs uppercase tracking-[0.5em] text-sage font-bold mb-4">Oamenii din spatele stării tale de bine</h2>
+                <h3 class="text-4xl md:text-5xl italic font-light text-stone-800">Echipa Noastră</h3>
+                <div class="h-px w-20 bg-gold/40 mx-auto mt-6"></div>
+            </div>
+
+            <div class="relative w-full max-w-6xl mx-auto overflow-hidden rounded-xl shadow-2xl border border-stone-100">
+                
+                <img src="https://media.istockphoto.com/id/944822144/photo/proud-owner-and-co-workers-of-a-beauty-spa.jpg?s=1024x1024&w=is&k=20&c=MEi1FhVDIJOJLRaXOVkg135wq1meu-vRtBYb8OmFJZI=" 
+                     alt="Echipa profesionistă Serenity Haven" 
+                     class="w-full h-auto max-h-[80vh] object-cover"
+                     style="display: block;">
+
+                <div class="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-black/80 via-black/40 to-transparent z-20"></div>
+
+                <div class="absolute bottom-0 left-0 right-0 p-8 md:p-12 text-white z-30 text-left">
+                    <h4 class="text-2xl md:text-3xl font-medium mb-4 italic tracking-wide">Profesioniștii Tăi</h4>
+                    
+                    <p class="text-sm md:text-base font-light leading-relaxed text-stone-100 max-w-4xl">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                    
+                    <div class="h-px w-20 bg-sage/60 mt-8"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="despre" class="py-24 px-6 bg-sand/20">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center">
+            <div class="relative">
+                <div class="absolute -top-10 -left-10 w-64 h-64 bg-sage/10 rounded-full blur-3xl"></div>
+                <img src="https://images.pexels.com/photos/3757952/pexels-photo-3757952.jpeg?auto=compress&cs=tinysrgb&w=800" class="relative z-10 rounded-2xl shadow-2xl" alt="Povestea Noastră">
+                <div class="absolute -bottom-6 -right-6 bg-white p-8 rounded-xl shadow-xl z-20 hidden md:block">
+                    <p class="text-sage text-4xl font-bold italic">12+</p>
+                    <p class="text-stone-500 text-[10px] uppercase tracking-widest font-bold">Ani de Excelență</p>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-4xl md:text-5xl mb-8 leading-tight">Povestea din spatele <br><span class="text-sage italic">Ayanna Wellness Concept Haven</span></h2>
+                <div class="space-y-6 text-stone-600 font-light leading-relaxed">
+                    <p>Fondat în inima naturii, Ayanna Wellness Concept Haven a început ca un vis de a crea un spațiu unde timpul stă în loc. Nu suntem doar un centru SPA; suntem un sanctuar dedicat regenerării celulare și liniștii mentale.</p>
+                    <p>Fiecare detaliu, de la aroma uleiurilor esențiale organice până la sunetul terapeutic al apei, a fost ales pentru a facilita o stare de prezență deplină.</p>
+                </div>
+                <div class="mt-12 flex gap-8 items-center">
+                    <div>
+                        <p class="font-bold text-stone-800">Elena Ionescu</p>
+                        <p class="text-xs uppercase tracking-tighter text-stone-400">Fondator & Lead Therapist</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-darkgreen text-white/80 py-16 px-6 border-t border-white/5">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="col-span-1 md:col-span-1">
+                <div class="text-2xl font-bold tracking-[0.3em] text-white uppercase mb-6">Ayanna Wellness Concept</div>
+                <p class="text-sm font-light leading-relaxed mb-8">Sanctuarul tău de relaxare și reechilibrare, unde estetica se întâlnește cu starea de bine.</p>
+            </div>
+            <div>
+                <h4 class="text-white text-xs uppercase tracking-[0.2em] font-bold mb-6">Link-uri Rapide</h4>
+                <ul class="space-y-4 text-sm font-light">
+                    <li><a href="#" class="hover:text-sage transition">Acasă</a></li>
+                    <li><a href="#programe" class="hover:text-sage transition">Programe SPA</a></li>
+                    <li><a href="#facilitati" class="hover:text-sage transition">Facilități</a></li>
+                    <li><a href="#despre" class="hover:text-sage transition">Povestea Noastră</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white text-xs uppercase tracking-[0.2em] font-bold mb-6">Program</h4>
+                <ul class="space-y-2 text-sm font-light">
+                    <li class="flex justify-between"><span>Luni - Vineri</span> <span class="text-white">09:00 - 21:00</span></li>
+                    <li class="flex justify-between"><span>Sâmbătă</span> <span class="text-white">10:00 - 18:00</span></li>
+                    <li class="flex justify-between"><span>Duminică</span> <span class="text-white">Închis</span></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white text-xs uppercase tracking-[0.2em] font-bold mb-6">Newsletter</h4>
+                <p class="text-[11px] mb-4">Abonează-te pentru oferte exclusive și ritualuri de wellness.</p>
+                <div class="flex">
+                    <input type="email" placeholder="Email-ul tău" class="bg-white/5 border border-white/10 px-4 py-2 text-sm w-full focus:outline-none focus:border-sage">
+                    <button class="bg-sage px-4 py-2 hover:bg-[#b7ce63] transition group">
+                        <svg class="w-4 h-4 text-darkgreen group-hover:scale-110 transition" fill="currentColor" viewBox="0 0 20 20"><path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/5 text-[10px] uppercase tracking-widest flex flex-col md:row justify-between items-center opacity-50">
+            <p>&copy; 2026 Ayanna Wellness Concept. Toate drepturile rezervate.</p>
+            <div class="flex gap-6 mt-4 md:mt-0">
+                <a href="#">Termeni și Condiții</a>
+                <a href="#">Politică Privacy</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+	<div x-data="{ showModal: false }" x-init="setTimeout(() => showModal = true, 3000)">
+    
+    <div 
+        x-show="showModal" 
+        x-transition:enter="transition ease-out duration-300"
+        x-transition:enter-start="opacity-0"
+        x-transition:enter-end="opacity-100"
+        x-transition:leave="transition ease-in duration-200"
+        x-transition:leave-start="opacity-100"
+        x-transition:leave-end="opacity-0"
+        class="fixed inset-0 z-[100] flex items-center justify-center px-4 bg-black/70 backdrop-blur-sm"
+        x-cloak
+    >
+        <div 
+            @click.away="showModal = false"
+            class="relative w-full max-w-lg overflow-hidden bg-white shadow-2xl"
+        >
+            <button @click="showModal = false" class="absolute top-4 right-4 z-50 text-stone-400 hover:text-stone-900 transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" style="color: #ffffff" />
+                </svg>
+            </button>
+
+            <div class="flex flex-col">
+                <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/6663571/pexels-photo-6663571.jpeg?auto=compress&cs=tinysrgb&w=800')">
+                </div>
+
+                <div class="p-8 text-center">
+                    <p class="text-[#C5A059] uppercase tracking-widest text-[10px] mb-2 font-bold">Newsletter-ul Ayanna Wellness Concept</p>
+                    <h3 class="text-2xl md:text-3xl font-light italic text-stone-800 mb-4">Abonează-te pentru liniște</h3>
+                    <p class="text-stone-500 text-sm mb-6 leading-relaxed">
+                        Primește 10% reducere la prima ta programare și fii prima persoană care află despre ritualurile noastre sezoniere.
+                    </p>
+
+                    <form @submit.prevent="showModal = false; alert('Mulțumim pentru abonare!')" class="space-y-3">
+                        <input 
+                            type="email" 
+                            placeholder="Adresa ta de email" 
+                            required
+                            class="w-full px-4 py-3 border border-stone-200 focus:border-[#C5A059] focus:ring-0 outline-none transition-all text-sm"
+                        >
+                        <button 
+                            type="submit" 
+                            class="w-full bg-stone-900 text-white py-3 px-6 uppercase tracking-widest text-xs font-bold hover:bg-[#C5A059] transition-colors duration-300"
+                        >
+                            Mă abonez
+                        </button>
+                    </form>
+
+                    <p class="mt-4 text-[10px] text-stone-400 uppercase tracking-tighter">
+                        *Promitem să nu trimitem spam. Te poți dezabona oricând.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+</body>
+</html>
